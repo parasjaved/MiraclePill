@@ -18,14 +18,9 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     @IBOutlet weak var countryInput: UITextField!
     
-    @IBOutlet weak var zipCodeTitle: UILabel!
+    @IBOutlet var zipCodeTitle: UIView!
     
     @IBOutlet weak var zipCodeInput: UITextField!
-    
-    @IBOutlet weak var buyNowBtn: UIImageView!
-    
-    @IBOutlet weak var successImage: UIImageView!
-    
     
     let states = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florid", "Georgia", "Hawaii", "Idaho",  "Illinois Indiana",
         "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts",
@@ -50,16 +45,12 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
 
     @IBAction func stateBtnPressed(_ sender: AnyObject) {
-        
         statePicker.isHidden = false
-        countryTitle.isHidden = true
-        countryInput.isHidden = true
-        zipCodeTitle.isHidden = true
-        zipCodeInput.isHidden = true
-        
-        
+//        countryTitle.isHidden = true
+//        countryInput.isHidden = true
+//        zipCodeTitle.isHidden = true
+//        zipCodeInput.isHidden = true
     }
- 
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -75,21 +66,13 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         statePickerBtn.setTitle(states[row], for: UIControlState.normal)
-//        statePicker.isHidden = true
-//        countryTitle.isHidden = false
-//        countryInput.isHidden = false
-//        zipCodeTitle.isHidden = false
-//        zipCodeInput.isHidden = false
-        
         statePicker.isHidden = true
-    
         countryTitle.isHidden = false
         countryInput.isHidden = false
         zipCodeTitle.isHidden = false
         zipCodeInput.isHidden = false
-            
+        
     }
-    
 
 }
 
