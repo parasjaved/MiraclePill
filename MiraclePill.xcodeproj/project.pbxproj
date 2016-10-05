@@ -12,6 +12,7 @@
 		3357BF951DA42494000E28EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3357BF931DA42494000E28EE /* Main.storyboard */; };
 		3357BF971DA42494000E28EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3357BF961DA42494000E28EE /* Assets.xcassets */; };
 		3357BF9A1DA42494000E28EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3357BF981DA42494000E28EE /* LaunchScreen.storyboard */; };
+		33E132F11DA4622B00183E5D /* success.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E132F01DA4622B00183E5D /* success.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3357BF961DA42494000E28EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3357BF991DA42494000E28EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3357BF9B1DA42494000E28EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33E132F01DA4622B00183E5D /* success.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = success.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		3357BF831DA42494000E28EE = {
 			isa = PBXGroup;
 			children = (
+				33E132F01DA4622B00183E5D /* success.swift */,
 				3357BF8E1DA42494000E28EE /* MiraclePill */,
 				3357BF8D1DA42494000E28EE /* Products */,
 			);
@@ -139,6 +142,7 @@
 			files = (
 				3357BF921DA42494000E28EE /* ViewController.swift in Sources */,
 				3357BF901DA42494000E28EE /* AppDelegate.swift in Sources */,
+				33E132F11DA4622B00183E5D /* success.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +306,7 @@
 				3357BFA01DA42494000E28EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
